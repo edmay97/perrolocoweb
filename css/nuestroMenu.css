@@ -1,0 +1,173 @@
+.contenedorNuestroMenu{
+    width: 78%;
+    margin:0 0 0 auto;
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 20px 10px 30px 10px;
+    height: 400px;
+    background: none;
+}
+.contenedorNuestroMenu .contTodoMenus{
+    display: flex;
+    flex-direction: column; 
+}
+ h2{
+    top: 0;
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: 32px;
+    font-family: 'Maven Pro', sans-serif;
+}
+.barra{
+    color:rgb(136, 0, 0);
+    font-weight: bold;
+    line-height: 2%;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    transform: translateX(500px);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.titulo{
+    /*transform: translateX(-500px);*/
+    opacity: 1;
+    transition: all 0.8s;
+    font-family: 'Fira Sans', sans-serif;
+    color: #E32929;
+}
+.contenedorPlatos{
+    margin:7px auto 7px 0;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-gap: 14px;
+    width: 75%;
+    padding: 20px;
+}
+.contenedorPlatos .contPlato{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+    margin:4px 14px
+}
+.contenedorPlatos .contPlato div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.contenedorPlatos .contPlato img{
+    width: 100%;
+    max-width: 400px;
+    object-fit: contain;
+    object-position: center;
+    transition: all 0.4s;
+    /*transform:translateY(200px);*/
+    opacity: 1;
+}
+.contenedorPlatos .contPlato a{
+    display: block;
+    margin:0 4px;
+    text-decoration: none;
+    color: rgba(20,20,20);
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.contenedorPlatos .contPlato div:hover > img{
+    width: 110%;
+}
+.bordes{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom: 0.5px solid rgb(136, 0, 0,0.9);
+    border-top: 0.5px solid rgb(136, 0, 0,0.9);
+}
+@media (max-width: 1120px) {
+    .contenedorPlatos{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 14px;
+        width: 100%;
+        padding: 20px;
+    }
+    .contenedorNuestroMenu{
+        width: 78%;
+        margin:0 0 0 auto;
+        position: relative;
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 20px 10px 30px 10px;
+        height: 550px;
+        background: none;
+    }
+
+}
+@media (max-width: 900px) {
+    .contenedorPlatos{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 14px;
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+@media (max-width: 720px) {
+    .contenedorPlatos{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 14px;
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+@media (max-width: 668px) {
+    .contenedorPlatos{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 14px;
+        width: 100%;
+        padding: 20px;
+    }
+    .contenedorNuestroMenu{
+        width: 78%;
+        margin:0 0 0 auto;
+        position: relative;
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 20px 10px 30px 10px;
+        height: 900px;
+        background: none;
+    }
+
+}

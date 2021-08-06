@@ -1,0 +1,80 @@
+.contenedorFormulario{
+    position: relative;
+    width: 100%;
+    padding: 60px 20px 10px 20px;
+}
+.contenedorFormulario .contGrid{
+    position: relative;
+    width: 98%;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr 0.6fr;
+    justify-content: center;
+    margin: 5px auto;
+    padding: 20px 10px;
+}
+.contenedorFormulario .contGrid img{
+    width: 70%;
+    margin: auto;
+}
+.contenedorFormulario .contGrid .contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.contenedorFormulario  .contacto p{
+    text-align: left;
+    margin: 5px 0 20px 0;
+    font-family: 'Heebo', sans-serif;
+}
+.contenedorFormulario  .contacto b{
+    text-align: left;
+    margin: 5px ;
+    font-family: 'Mulish', sans-serif;
+    color: rgba(0,0,0,);
+}
+.contenedorFormulario .contGrid .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+.contenedorFormulario .contGrid .formulario label{
+    display: block;
+    text-align: left;
+    width: 98%;
+    margin: 2px auto;
+    font-family: 'Heebo', sans-serif;
+}
+.contenedorFormulario .contGrid .formulario input{
+    display: block;
+    text-align: left;
+    width: 98%;
+    padding: 7px;
+    margin: 2px auto;
+    border: 0.5px solid rgb(180,180,180,0.9);
+    background: none;
+    font-family: 'Heebo', sans-serif;
+}
+.contenedorFormulario .contGrid .formulario textarea{
+    width: 98%;
+    max-width:25vw;
+    min-width: 20vw;
+    max-height: 90px;
+    height: 100%;
+    border: 0.5px solid rgb(180,180,180,0.9);
+    background: none;
+    font-family: 'Heebo', sans-serif;
+}
+.contenedorFormulario .contGrid .formulario .btn{
+    color: rgba(255,255,255);
+    border: 1px solid #FF611D;
+    background: #FF611D;
+    border-radius: 6px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding:4px 14px;
+    margin: 4px auto;
+}

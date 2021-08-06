@@ -1,0 +1,13 @@
+.contenedorNosotros{
+    position: relative;
+    
+    padding: 20px;
+    width: 100%;
+}
+.contenedorNosotros p{
+    display: block;
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+}

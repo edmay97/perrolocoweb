@@ -1,0 +1,112 @@
+.pie{
+    position: relative;
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+.pie #fondoPiePagina{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    object-position: center;
+    bottom: 0;
+    z-index: -999999;
+}
+.contenedorDatosPie{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    bottom: 0;
+}
+.contenedorDatosPie .contDatPie{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin-top: 14px;
+}
+.contenedorDatosPie .contDatPie h4{
+    display: block;
+    text-align: center;
+    color: rgba(255,255,255);
+    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 10px;
+}
+.contenedorDatosPie .contDatPie p,b,a{
+    display: block;
+    text-align: center;
+    color: rgba(255,255,255);
+    font-family: 'Mulish', sans-serif;
+    line-height: 180%;
+    font-size: 14px;
+}
+.contenedorDatosPie .contDatPie a:hover{
+    color:#E32929;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.contenedorDatosPie .contDatPie div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorDatosPie .contDatPie div input{
+    border: 1px solid rgb(255,255,255);
+    border-radius: 5px;
+    height: 30px;
+    margin: auto 5px;
+    background: none;
+    color: rgb(255,255,255);
+    padding: 4px 0;
+    padding-left: 7px;
+    font-family: 'Mulish', sans-serif;
+    width: 100%;
+    min-width: 250px;
+    max-width: 600px;
+}
+.contenedorDatosPie .contDatPie div input::placeholder{
+    color: rgb(255,255,255);
+    font-family: 'Mulish', sans-serif;
+}
+.contenedorDatosPie .contDatPie div a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E32929;
+    border-radius: 4px;
+    height: 30px;
+    padding: 3px 7px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    padding: 3px 9px;
+}
+
+.contenedorDatosPie .contDatPie div a:hover{
+    cursor: pointer;
+    color: rgba(255,255,255);
+    font-weight: lighter;
+    text-decoration: none;
+}
+.contenedorDatosPie .contDatPie div a p{
+    position: absolute;
+    display: block;
+    width: 40%;
+    opacity: 0;
+    height: 100%;
+    transition: all 0.6s ;
+    border-radius: 9px;
+}
+.contenedorDatosPie .contDatPie div a:hover >p{
+    width: 130%;
+    opacity: 1;
+}
