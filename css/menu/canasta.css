@@ -1,0 +1,10 @@
+.contenedorcanasta{
+    position: fixed;
+    display: flex;
+    top: 60px;
+    right: 0;
+    width: 80px;
+    height: 50px;
+    background: #E32929;
+    z-index: 9999999;
+}
